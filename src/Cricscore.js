@@ -32,18 +32,23 @@ export class CricScore extends Component {
     const id = e.target.id;
     switch (id) {
       case "2":
+         this.changeBalls();
         this.changeScore(2);
         break;
       case "3":
+         this.changeBalls();
         this.changeScore(3);
         break;
       case "4":
+         this.changeBalls();
         this.changeScore(4);
         break;
       case "6":
+         this.changeBalls();
         this.changeScore(6);
         break;
       case "1":
+         this.changeBalls();
         this.changeScore(1);
         break;
       case "No Ball":
@@ -53,6 +58,7 @@ export class CricScore extends Component {
         this.changeScore(1, false);
         break;
       case "Wicket":
+         this.changeBalls();
         this.setState((prevState) => ({
           ...prevState,
           wickets: this.state.wickets + 1
